@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chocolate Shop — Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">ChocoOnly</h1>
+      <nav>
+        <button id="cart-btn" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>All the chocolate. None of the clutter.</h2>
+      <p>Hand-picked chocolates delivered to your door.</p>
+    </section>
+
+    <section>
+      <h3 class="section-title">Our Chocolates</h3>
+      <div id="products" class="grid"></div>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">Close</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout-btn" class="btn-primary">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> ChocoOnly — Sweetness shipped fast.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
